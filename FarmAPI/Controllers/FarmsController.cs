@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FarmAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 
 namespace FarmAPI.Controllers
 {
@@ -10,7 +13,24 @@ namespace FarmAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        [HttpGet]
+        public ActionResult Get()
+        {
+
+
+            List<Temp> test = new List<Temp>();
+            test.Add(new Temp("ABC"));
+
+            
+            return Ok(test);
+            // return Ok(dummyJson);
+
+            //RETURN ALL FARMS
+            //IF TIME RETURN ALL USER FARMS
+
+        }
+        
+        /* // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -40,6 +60,6 @@ namespace FarmAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-        }
+        }*/
     }
 }
