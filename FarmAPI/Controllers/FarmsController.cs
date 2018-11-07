@@ -11,7 +11,7 @@ namespace FarmAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class FarmsController : ControllerBase
     {
         [HttpGet]
         public ActionResult Get()
