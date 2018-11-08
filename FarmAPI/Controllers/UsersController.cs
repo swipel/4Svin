@@ -13,34 +13,20 @@ namespace FarmAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FarmsController : ControllerBase
+    public class UsersController : ControllerBase
     {
         readonly ApiManager ApiMan = new ApiManager();
         
         [HttpGet]
         public ActionResult Get()
         {
-            var farms = ApiMan.getAllFarms().ToList();
-            if (farms.Count > 0)
-            {
-                return Ok(farms);
-            }
-            else
-            {
-                return NotFound("Fail");
-            }
+          //  var Users = ApiMan.getAllFarms().ToList();
 
-            //RETURN ALL FARMS
-            //IF TIME RETURN ALL USER FARMS
+            
+            return Ok();
+
         }
-
-        [HttpGet("{id}/feed")]
-        public ActionResult Get(int id)
-        {
-            ApiMan.FeedAnimal(id);
-            return Ok(id.ToString());
-        }
-
+        
         /* // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()

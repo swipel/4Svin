@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,8 +12,14 @@ namespace FarmAPI.Manager
         public IEnumerable<Farm> getAllFarms()
         {
             var context = new SvinSkoleContext();
-            var list = context.Farm.Where(a => a.FarmId.Equals(1)).Include(a => a.Barn).Include(b => b.Barn.Box());
-            return list;
+                var list = context.Farm.Include(a => a.Barn).ThenInclude(b => b.Box).ThenInclude(c => c.SensorBox)
+                    .ThenInclude(d => d.Sensor).ThenInclude(e => e.SensorValue);
+                return list;
+        }
+
+        public Boolean FeedAnimal(int farmId)
+        {
+            return true;
         }
     }
 }
