@@ -20,6 +20,7 @@ namespace FarmAPI.Controllers
 
             List<Temp> test = new List<Temp>();
             test.Add(new Temp("ABC"));
+            test.Add(new Temp("DEC"));
 
             
             return Ok(test);
