@@ -13,6 +13,9 @@
       </e>
       <e p="FarmAPI.csproj" t="IncludeRecursive" />
       <e p="FarmAPI.sln" t="IncludeFlat" />
+      <e p="Manager" t="Include">
+        <e p="APIManager.cs" t="Include" />
+      </e>
       <e p="Models" t="Include">
         <e p="Barn.cs" t="Include" />
         <e p="Box.cs" t="Include" />
@@ -32,7 +35,6 @@
         <e p="SensorValue.cs" t="Include" />
         <e p="Silo.cs" t="Include" />
         <e p="SvinSkoleContext.cs" t="Include" />
-        <e p="Temp.cs" t="Include" />
         <e p="User.cs" t="Include" />
         <e p="UserFarm.cs" t="Include" />
         <e p="Zipcode.cs" t="Include" />

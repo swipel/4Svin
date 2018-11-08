@@ -2,29 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FarmAPI.Manager;
 using FarmAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using Microsoft.IdentityModel.Tokens;
 
 namespace FarmAPI.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("")]
     [ApiController]
     public class FarmsController : ControllerBase
     {
+        readonly ApiManager ApiMan = new ApiManager();
+        
         [HttpGet]
         public ActionResult Get()
         {
-
-
-            List<Temp> test = new List<Temp>();
-            test.Add(new Temp("ABC"));
-            test.Add(new Temp("DEC"));
-
-            
-            return Ok(test);
-            // return Ok(dummyJson);
+           
+            var farms = ApiMan.getAllFarms().ToList();
+            return Ok(farms);
 
             //RETURN ALL FARMS
             //IF TIME RETURN ALL USER FARMS

@@ -77,8 +77,6 @@ namespace FarmAPI.Models
 
             modelBuilder.Entity<BoxType>(entity =>
             {
-                entity.Property(e => e.BoxTypeId).ValueGeneratedNever();
-
                 entity.Property(e => e.Type)
                     .IsRequired()
                     .HasMaxLength(255)
@@ -88,6 +86,8 @@ namespace FarmAPI.Models
             modelBuilder.Entity<Country>(entity =>
             {
                 entity.HasKey(e => e.CountryCode);
+
+                entity.Property(e => e.CountryCode).ValueGeneratedNever();
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -342,7 +342,9 @@ namespace FarmAPI.Models
             {
                 entity.HasKey(e => e.Zipcode1);
 
-                entity.Property(e => e.Zipcode1).HasColumnName("Zipcode");
+                entity.Property(e => e.Zipcode1)
+                    .HasColumnName("Zipcode")
+                    .ValueGeneratedNever();
 
                 entity.Property(e => e.City)
                     .IsRequired()
