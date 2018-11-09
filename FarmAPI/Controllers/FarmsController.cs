@@ -15,12 +15,12 @@ namespace FarmAPI.Controllers
     [ApiController]
     public class FarmsController : ControllerBase
     {
-        readonly ApiManager ApiMan = new ApiManager();
+        private readonly ApiManager _apiManager = new ApiManager();
         
         [HttpGet]
         public ActionResult Get()
         {
-            var farms = ApiMan.getAllFarms().ToList();
+            var farms = _apiManager.GetAllFarms().ToList();
             if (farms.Count > 0)
             {
                 return Ok(farms);
@@ -31,46 +31,14 @@ namespace FarmAPI.Controllers
             }
 
             //RETURN ALL FARMS
-            //IF TIME RETURN ALL USER FARMS
+            //TODO only get user farm
         }
-
+        
         [HttpGet("{id}/feed")]
         public ActionResult Get(int id)
         {
-            ApiMan.FeedAnimal(id);
+            _apiManager.FeedAnimal(id);
             return Ok(id.ToString());
         }
-
-        /* // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] {"value1", "value2"};
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }*/
     }
 }

@@ -15,7 +15,7 @@ namespace FarmAPI.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        readonly ApiManager ApiMan = new ApiManager();
+        readonly ApiManager _apiManager = new ApiManager();
         
         [HttpGet]
         public ActionResult Get()

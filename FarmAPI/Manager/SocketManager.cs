@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,14 @@ namespace FarmAPI.Manager
 {
     public class SocketManager
     {
-       
+        public void FeedFarm(int farmId)
+        {
+            
+        }
+
+        private void LogFeeding(int farmId, Boolean bools)
+        {
+            
+        }
     }
 }

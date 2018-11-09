@@ -14,6 +14,7 @@ namespace FarmAPI.Models
         public int BarnNumber { get; set; }
         public int FarmId { get; set; }
         public int BoxType { get; set; }
+        public int? AnimalAmount { get; set; }
 
         public Barn Barn { get; set; }
         public BoxType BoxTypeNavigation { get; set; }

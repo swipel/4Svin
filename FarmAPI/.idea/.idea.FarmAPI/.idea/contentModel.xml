@@ -9,6 +9,7 @@
       <e p="appsettings.json" t="Include" />
       <e p="Bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
+        <e p="BoxesController.cs" t="Include" />
         <e p="FarmsController.cs" t="Include" />
         <e p="UsersController.cs" t="Include" />
       </e>
@@ -16,6 +17,7 @@
       <e p="FarmAPI.sln" t="IncludeFlat" />
       <e p="Manager" t="Include">
         <e p="APIManager.cs" t="Include" />
+        <e p="ScheduleHandler.cs" t="Include" />
         <e p="SocketManager.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -52,10 +54,13 @@
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
+        <e p="PublishProfiles" t="Include">
+          <e p="Test.pubxml" t="Include" />
+        </e>
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="WebSocket" t="Include">
-        <e p="ApiWebSocket.cs" t="Include" />
+        <e p="ApiSocket.cs" t="Include" />
       </e>
       <e p="wwwroot" t="Include" />
     </e>
