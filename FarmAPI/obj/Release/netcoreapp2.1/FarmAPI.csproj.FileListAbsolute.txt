@@ -1,0 +1,14 @@
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\FarmAPI.deps.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\FarmAPI.runtimeconfig.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\FarmAPI.runtimeconfig.dev.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\FarmAPI.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\FarmAPI.pdb
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.csprojAssemblyReference.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.csproj.CoreCompileInputs.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.RazorAssemblyInfo.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.RazorAssemblyInfo.cs
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.AssemblyInfoInputs.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.AssemblyInfo.cs
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\FarmAPI.pdb

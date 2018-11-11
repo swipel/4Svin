@@ -1,0 +1,17 @@
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\hostpolicy.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\hostfxr.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.exe
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.deps.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.runtimeconfig.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.runtimeconfig.dev.json
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\bin\Release\netcoreapp2.1\win10-x64\FarmAPI.pdb
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.csprojAssemblyReference.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.csproj.CoreCompileInputs.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.RazorAssemblyInfo.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.RazorAssemblyInfo.cs
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.AssemblyInfoInputs.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.AssemblyInfo.cs
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmAPI\obj\Release\netcoreapp2.1\win10-x64\FarmAPI.pdb

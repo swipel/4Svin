@@ -1,0 +1,10 @@
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\bin\Debug\FarmDataController.exe.config
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\bin\Debug\FarmDataController.exe
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\bin\Debug\FarmDataController.pdb
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\obj\Debug\FarmDataController.csprojAssemblyReference.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\obj\Debug\FarmDataController.csproj.CoreCompileInputs.cache
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\obj\Debug\FarmDataController.csproj.CopyComplete
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\obj\Debug\FarmDataController.exe
+C:\Users\Christoffer\RiderProjects\4Svin\FarmDataController\FarmDataController\obj\Debug\FarmDataController.pdb
