@@ -1,26 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { ModalModule } from 'ngx-bootstrap/modal';
+import { FarmManagementComponent } from './farm-management/farm-management.component';
+import { RoutingModule } from './routing/routing.module';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { BoxDetailsComponent } from './box-details/box-details.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FarmManagementComponent,
+    StatisticsComponent,
+    BoxDetailsComponent
   ],
   imports: [
-    BrowserModule,
-    BsDropdownModule.forRoot(),
-    TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    BrowserModule, RoutingModule, HttpClientModule
   ],
-  exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
   bootstrap: [AppComponent]
-  
 })
 export class AppModule { }

@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Christoffer\\.nuget\\packages\\": {},
+    "C:\\Users\\hqk200.UNICPH.000\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\FarmAPI.csproj",
+      "projectUniqueName": "C:\\_Work\\4Svin\\FarmAPI\\FarmAPI.csproj",
       "projectName": "FarmAPI",
-      "projectPath": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\FarmAPI.csproj",
-      "packagesPath": "C:\\Users\\Christoffer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\obj\\",
+      "projectPath": "C:\\_Work\\4Svin\\FarmAPI\\FarmAPI.csproj",
+      "packagesPath": "C:\\Users\\hqk200.UNICPH.000\\.nuget\\packages\\",
+      "outputPath": "C:\\_Work\\4Svin\\FarmAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Christoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hqk200.UNICPH.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11547,7 +11547,6 @@
             "autoReferenced": true
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
