@@ -29,7 +29,7 @@ namespace FarmAPI.Manager
 
         public void FeedAnimal(int farmId)
         {
-            _socketManager.FeedFarm(farmId);
+            _socketManager.FeedAnimal(farmId);
         }
 
         public Boolean ChangeBox(BoxUpdate box)
@@ -41,7 +41,6 @@ namespace FarmAPI.Manager
             boxes[0].BoxType = box.Type;
             context.Entry(boxes[0]);
             context.SaveChanges();
-            return true;
             return true;
         }
     }

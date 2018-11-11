@@ -23,7 +23,7 @@ namespace FarmDataController.Sockets
 
                 while (true)
                 {
-                    Console.WriteLine("Waiting for a connection...");
+                    Console.WriteLine("Waiting for a connection");
                     Socket handler = listener.Accept();
 
                     string data = null;

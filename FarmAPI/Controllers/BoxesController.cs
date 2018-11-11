@@ -26,13 +26,11 @@ namespace FarmAPI.Controllers
             {
                 return Ok(boxes);
             }
-
             return NotFound("Fail");
         }
 
         //Update box
         [HttpPut("{id}")]
-        //public ActionResult Put(int amount, int type, int boxNumber, int barnNumber, int farmId)
         public ActionResult Put(BoxUpdate boxUpdate)
         {
             var success = _apiManager.ChangeBox(boxUpdate);
@@ -40,7 +38,6 @@ namespace FarmAPI.Controllers
             {
                 return Ok(success);
             }
-
             return NotFound("Fail");
         }
     }

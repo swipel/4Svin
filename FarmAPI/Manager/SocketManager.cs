@@ -3,20 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FarmAPI.Models;
+using FarmAPI.WebSocket;
 using Microsoft.EntityFrameworkCore;
+using Type = FarmAPI.Models.TypeEnum;
 
 namespace FarmAPI.Manager
 {
     public class SocketManager
     {
-        public void FeedFarm(int farmId)
+        ApiSocket socket = new ApiSocket();
+
+        public void FeedAnimal(int farmId)
         {
-            
+         //TODO FEED
+            var feedStatus = socket.FeedAnimal(new SocketMessage(Type.Feed, farmId));
+            //TODO Check feed status and transform to a short need data from ls
+            //LogFeeding(farmId, 1);
         }
 
-        private void LogFeeding(int farmId, Boolean bools)
+        private void LogFeeding(int farmId, short state)
         {
-            
+            var context = new SvinSkoleContext();
+            var foodLog = new FeedLog{FarmId = farmId, Logtime = new DateTime (), State = state};
+            context.Add(foodLog);
+            context.SaveChanges();
         }
     }
 }

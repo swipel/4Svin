@@ -34,11 +34,11 @@ namespace FarmAPI.Controllers
             //TODO only get user farm
         }
         
-        [HttpGet("{id}/feed")]
-        public ActionResult Get(int id)
+        [HttpGet("{farmId}/feed")]
+        public ActionResult Get(int farmId)
         {
-            _apiManager.FeedAnimal(id);
-            return Ok(id.ToString());
+            _apiManager.FeedAnimal(farmId);
+            return Ok("Started feeding of farm: " + farmId.ToString());
         }
     }
 }
