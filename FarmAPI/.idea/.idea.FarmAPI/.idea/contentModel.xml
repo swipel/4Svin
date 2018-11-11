@@ -24,6 +24,7 @@
         <e p="Barn.cs" t="Include" />
         <e p="Box.cs" t="Include" />
         <e p="BoxType.cs" t="Include" />
+        <e p="BoxUpdate.cs" t="Include" />
         <e p="Country.cs" t="Include" />
         <e p="Farm.cs" t="Include" />
         <e p="FeedLog.cs" t="Include" />

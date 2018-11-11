@@ -18,7 +18,7 @@ namespace FarmAPI.Controllers
         private readonly ApiManager _apiManager = new ApiManager();
         
         //Get statistics
-        [HttpGet("{id}/statistics")]
+        [HttpGet("{farmId}/statistics")]
         public ActionResult Get(int farmId)
         {
             var boxes = _apiManager.GetStatistics(farmId).ToList();
@@ -33,9 +33,9 @@ namespace FarmAPI.Controllers
         //Update box
         [HttpPut("{id}")]
         //public ActionResult Put(int amount, int type, int boxNumber, int barnNumber, int farmId)
-        public ActionResult Put([FromBody] string value)
+        public ActionResult Put(BoxUpdate boxUpdate)
         {
-            var success = _apiManager.ChangeBox(amount, type, boxNumber, barnNumber, farmId);
+            var success = _apiManager.ChangeBox(boxUpdate);
             if (success)
             {
                 return Ok(success);
