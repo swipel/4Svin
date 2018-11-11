@@ -1,0 +1,12 @@
+
+
+
+<button (click)="loadStatsFromSelectedFarm()">Load statistics</button>
+
+<ul>
+  <li *ngFor="let stat of stats">
+
+    <span>Amount of animals: {{stat.animalAmount}} , Boxtype: {{stat.boxType}} , {{stat.logTime}} , Value: {{stat.value}}</span>
+  
+  </li>
+</ul>

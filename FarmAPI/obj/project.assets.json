@@ -6080,7 +6080,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.3": {
-      "sha512": "G0soUii72VLtx3lOFXFaKIJ190hSZNnjkNvIxejaZdQFX3JTgXMB6C81KFinIkZXrt4wVdmu0xmmafB4sD7v6w==",
+      "sha512": "hzmsyzyoJJPB1XVC9oLiE9j9NrReeuTicAAiH/W2kBVfjX0/2isyi0S/4jVF6oP6MIuLBGOqRwjMwwG0jaz0rA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.3",
       "files": [
@@ -12251,23 +12251,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Christoffer\\.nuget\\packages\\": {},
+    "C:\\Users\\hqk200.UNICPH.000\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\FarmAPI.csproj",
+      "projectUniqueName": "C:\\_Work\\4Svin\\FarmAPI\\FarmAPI.csproj",
       "projectName": "FarmAPI",
-      "projectPath": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\FarmAPI.csproj",
-      "packagesPath": "C:\\Users\\Christoffer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Christoffer\\RiderProjects\\4Svin\\FarmAPI\\obj\\",
+      "projectPath": "C:\\_Work\\4Svin\\FarmAPI\\FarmAPI.csproj",
+      "packagesPath": "C:\\Users\\hqk200.UNICPH.000\\.nuget\\packages\\",
+      "outputPath": "C:\\_Work\\4Svin\\FarmAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Christoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hqk200.UNICPH.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12310,7 +12310,6 @@
             "version": "[2.0.3, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12327,5 +12326,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\_Work\\4Svin\\FarmAPI\\obj\\FarmAPI.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
