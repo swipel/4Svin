@@ -7,6 +7,9 @@ import { FarmManagementComponent } from './farm-management/farm-management.compo
 import { RoutingModule } from './routing/routing.module';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { BoxDetailsComponent } from './box-details/box-details.component';
+import {FormsModule} from '@angular/forms';
+
+import {Globals} from './Globals';
 
 
 @NgModule({
@@ -17,9 +20,9 @@ import { BoxDetailsComponent } from './box-details/box-details.component';
     BoxDetailsComponent
   ],
   imports: [
-    BrowserModule, RoutingModule, HttpClientModule
+    BrowserModule, RoutingModule, HttpClientModule, FormsModule
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

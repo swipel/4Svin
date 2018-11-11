@@ -9,12 +9,39 @@
       <e p="appsettings.json" t="Include" />
       <e p="Bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
+        <e p="BoxesController.cs" t="Include" />
         <e p="FarmsController.cs" t="Include" />
+        <e p="UsersController.cs" t="Include" />
       </e>
       <e p="FarmAPI.csproj" t="IncludeRecursive" />
       <e p="FarmAPI.sln" t="IncludeFlat" />
+      <e p="Manager" t="Include">
+        <e p="APIManager.cs" t="Include" />
+        <e p="ScheduleHandler.cs" t="Include" />
+        <e p="SocketManager.cs" t="Include" />
+      </e>
       <e p="Models" t="Include">
-        <e p="Temp.cs" t="Include" />
+        <e p="Barn.cs" t="Include" />
+        <e p="Box.cs" t="Include" />
+        <e p="BoxType.cs" t="Include" />
+        <e p="Country.cs" t="Include" />
+        <e p="Farm.cs" t="Include" />
+        <e p="FeedLog.cs" t="Include" />
+        <e p="FoodLog.cs" t="Include" />
+        <e p="FoodMixType.cs" t="Include" />
+        <e p="FoodType.cs" t="Include" />
+        <e p="Schedule.cs" t="Include" />
+        <e p="SecurityLevel.cs" t="Include" />
+        <e p="Sensor.cs" t="Include" />
+        <e p="SensorBox.cs" t="Include" />
+        <e p="SensorSilo.cs" t="Include" />
+        <e p="SensorType.cs" t="Include" />
+        <e p="SensorValue.cs" t="Include" />
+        <e p="Silo.cs" t="Include" />
+        <e p="SvinSkoleContext.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+        <e p="UserFarm.cs" t="Include" />
+        <e p="Zipcode.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -27,8 +54,14 @@
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
+        <e p="PublishProfiles" t="Include">
+          <e p="Test.pubxml" t="Include" />
+        </e>
       </e>
       <e p="Startup.cs" t="Include" />
+      <e p="WebSocket" t="Include">
+        <e p="ApiSocket.cs" t="Include" />
+      </e>
       <e p="wwwroot" t="Include" />
     </e>
   </component>

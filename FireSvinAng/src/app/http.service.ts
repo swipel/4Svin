@@ -3,6 +3,7 @@ import { HttpClient, HttpParams, HttpHeaders, HttpErrorResponse } from '@angular
 import { Observable, of, throwError } from 'rxjs';
 import { Farm } from './Models/Farm';
 import { catchError, tap } from "rxjs/operators";
+import { Statistic } from './Models/Statistic';
 
 
 @Injectable({
@@ -10,12 +11,18 @@ import { catchError, tap } from "rxjs/operators";
 })
 export class HttpService {
 
-  private ROOT_URL = "https://skole.pietras.dk/api/farms"; 
+  private ROOT_URL = "https://skole.pietras.dk/api"; 
   constructor(private http: HttpClient) { }
 
   getFarms(): Observable<Farm[]> 
   {
-    return this.http.get<Farm[]>(this.ROOT_URL).pipe(tap(data => console.log('All: ' + JSON.stringify(data))),
+    return this.http.get<Farm[]>(this.ROOT_URL + "/farms").pipe(tap(data => console.log('All: ' + JSON.stringify(data))),
+    catchError(this.handleError)
+    );
+  }
+
+  getStatistics(farmid: number) {
+    return this.http.get<Statistic[]>(this.ROOT_URL + "/boxes/" + farmid + "/statistics").pipe(tap(data => console.log('All: ' + JSON.stringify(data))),
     catchError(this.handleError)
     );
   }

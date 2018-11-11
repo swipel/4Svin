@@ -2,64 +2,43 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FarmAPI.Manager;
 using FarmAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using Microsoft.IdentityModel.Tokens;
 
 namespace FarmAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class FarmsController : ControllerBase
     {
+        private readonly ApiManager _apiManager = new ApiManager();
+        
         [HttpGet]
         public ActionResult Get()
         {
-
-
-            List<Temp> test = new List<Temp>();
-            test.Add(new Temp("ABC"));
-
-            
-            return Ok(test);
-            // return Ok(dummyJson);
+            var farms = _apiManager.GetAllFarms().ToList();
+            if (farms.Count > 0)
+            {
+                return Ok(farms);
+            }
+            else
+            {
+                return NotFound("Fail");
+            }
 
             //RETURN ALL FARMS
-            //IF TIME RETURN ALL USER FARMS
-
+            //TODO only get user farm
         }
         
-        /* // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [HttpGet("{id}/feed")]
+        public ActionResult Get(int id)
         {
-            return new string[] {"value1", "value2"};
+            _apiManager.FeedAnimal(id);
+            return Ok(id.ToString());
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }*/
     }
 }

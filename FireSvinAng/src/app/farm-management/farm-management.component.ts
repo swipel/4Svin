@@ -3,6 +3,8 @@ import { HttpService } from '../http.service';
 import { Observable } from 'rxjs';
 import { Barn } from '../Models/Barn';
 import { Farm } from '../Models/Farm';
+import { Globals } from '../Globals';
+
 
 @Component({
   selector: 'app-farm-management',
@@ -11,19 +13,34 @@ import { Farm } from '../Models/Farm';
 })
 export class FarmManagementComponent implements OnInit {
 
-  constructor(private http: HttpService) { }
+  constructor(private http: HttpService, private gl: Globals) { }
+  errorMessage: string;
+  
+  
+  farms: Farm[];
+  farm: Farm;
+  barns: Barn[];
+ 
+  
+
+  ngOnInit() {
+    this.http.getFarms().subscribe(
+      farms => 
+      this.farms = farms,
+      error => this.errorMessage = <any>error,
+    )
+
+    
+    
+
+  }
+
+ 
 
   
 
-  CurrentFarms: Observable<Farm>;
-
-  ngOnInit() {
-   //   this.getFarms();
-  }
-
-  //getFarms(): void {
-   // this.CurrentFarms = this.http.getFarms();
-  //}
+  
+  
 
 
 

@@ -3,7 +3,7 @@ import { Barn } from "./Barn";
 
 export class Farm {
     farmId: Number;
-    barn: Number;
+    barn: Barn[];
 
     // FeedFarm(): void {
 

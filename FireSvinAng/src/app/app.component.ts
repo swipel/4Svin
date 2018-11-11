@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Farm } from "./Models/Farm";
 import { HttpService } from './http.service';
 import { Observable } from 'rxjs';
+import { Globals } from './Globals';
 
 @Component({
   selector: 'app-root',
@@ -10,30 +11,26 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private http: HttpService) { }
+  constructor(private http: HttpService, private gl: Globals) { }
   
   errorMessage: String;
 
-  farmsList: Farm[];
-  farms: Farm[] = [];
+  
+  farms: Farm[];
 
-  selectedFarm: Number;
   
 
   ngOnInit() {
     this.http.getFarms().subscribe(
-      farms => {
-        this.farms = farms;
-        this.farmsList = this.farms;
-      },
+      farms => this.farms = farms,
       error => this.errorMessage = <any>error
     );
     
-  this.selectedFarm = 1;
-
-   
-
 }
+
+
+
+  
 
 
 

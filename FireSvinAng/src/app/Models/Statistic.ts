@@ -1,6 +1,7 @@
 
 export class Statistic {
-    Date: number; //Mock datatype, Fix soon
-    Value: number;
-    Type: string;
+    logTime: Date;
+    animalAmount: number;
+    boxType: number;
+    value: number;
 } 
