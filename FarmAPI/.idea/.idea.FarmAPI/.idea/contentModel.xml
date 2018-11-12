@@ -9,6 +9,7 @@
       <e p="appsettings.json" t="Include" />
       <e p="Bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
+        <e p="BarnsController.cs" t="Include" />
         <e p="BoxesController.cs" t="Include" />
         <e p="FarmsController.cs" t="Include" />
         <e p="UsersController.cs" t="Include" />

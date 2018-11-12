@@ -13,11 +13,12 @@ namespace FarmAPI.Manager
     {
         ApiSocket socket = new ApiSocket();
 
-        public void FeedAnimal(int farmId)
+        public void FeedAnimal(Farm farm)
         {
          //TODO FEED
-            var feedStatus = socket.FeedAnimal(new SocketMessage(Type.Feed, farmId));
+            var feedStatus = socket.FeedAnimal(new SocketMessage(Type.Feed, farm));
             //TODO Check feed status and transform to a short need data from ls
+            
             //LogFeeding(farmId, 1);
         }
 

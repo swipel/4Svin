@@ -17,6 +17,17 @@ namespace FarmAPI.Controllers
     {
         private readonly ApiManager _apiManager = new ApiManager();
         
+        [HttpGet("{farmId}/{barnNumber}")]
+        public ActionResult Get(int farmId, int barnNumber)
+        {
+            var boxes = _apiManager.GetAllBoxesByBarnId(farmId, barnNumber).ToList();
+            if (boxes.Count > 0)
+            {
+                return Ok(boxes);
+            }
+            return NotFound("Fail");
+        }
+        
         //Get statistics
         [HttpGet("{farmId}/statistics")]
         public ActionResult Get(int farmId)

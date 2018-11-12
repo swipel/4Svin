@@ -40,7 +40,8 @@ namespace FarmDataController.Sockets
                         }
                     }
             
-
+                    
+                    
                     Console.WriteLine("Text received : {0}", data);  
   
                     byte[] msg = Encoding.ASCII.GetBytes(data+" From server");  
@@ -57,6 +58,8 @@ namespace FarmDataController.Sockets
             Console.WriteLine("\n Press any key to continue...");  
             Console.ReadKey();  
         }     
+        
+        public void 
         
         
         public void GetDataMcManager()

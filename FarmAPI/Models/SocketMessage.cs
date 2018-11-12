@@ -10,7 +10,7 @@ namespace FarmAPI.Models
         public TypeEnum Type { get; set; }
         public int BoxId { get; set; }
         public int BarnId { get; set; }
-        public int FarmId { get; set; }
+        public Farm Farm { get; set; }
         
         /*Type
         1 = Feed
@@ -19,18 +19,18 @@ namespace FarmAPI.Models
         //Er ikke sikker på det her er den bedste måde :/
         
         
-        public SocketMessage(TypeEnum type, int farmId)
+        public SocketMessage(TypeEnum type, Farm farm)
         {
             Type = type;
-            FarmId = farmId;
+            Farm = farm;
         }
 
-        public SocketMessage(TypeEnum type, int boxId, int barnId, int farmId)
+        public SocketMessage(TypeEnum type, int boxId, int barnId, Farm farm)
         {
             Type = type;
             BoxId = boxId;
             BarnId = barnId;
-            FarmId = farmId;
+            Farm = farm;
         }
     }
 }

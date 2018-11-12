@@ -14,8 +14,22 @@ namespace FarmAPI.Manager
         public IEnumerable<Farm> GetAllFarms()
         {
             var context = new SvinSkoleContext();
-                var list = context.Farm.Include(a => a.Barn).ThenInclude(b => b.Box);
+                var list = context.Farm;
                 return list;
+        }
+        
+        public IEnumerable<Barn> GetAllBarnsByFarmId(int farmId)
+        {
+            var context = new SvinSkoleContext();
+            var list = context.Barn.Where(a => a.FarmId == farmId);
+            return list;
+        }
+        
+        public IEnumerable<Box> GetAllBoxesByBarnId(int farmId, int barnNumber)
+        {
+            var context = new SvinSkoleContext();
+            var list = context.Box.Where(a => a.FarmId == farmId).Where(b => b.BarnNumber == barnNumber);
+            return list;
         }
         
         public IEnumerable<Box> GetStatistics(int farmId)
@@ -29,7 +43,9 @@ namespace FarmAPI.Manager
 
         public void FeedAnimal(int farmId)
         {
-            _socketManager.FeedAnimal(farmId);
+            var context = new SvinSkoleContext();
+            var farms = context.Farm.Where(a => a.FarmId == farmId).ToList();
+            _socketManager.FeedAnimal(farms.FirstOrDefault());
         }
 
         public Boolean ChangeBox(BoxUpdate box)

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd35542d-299f-4270-b2b1-dd33ab900553" name="Default Changelist" comment="" />
+    <list default="true" id="dd35542d-299f-4270-b2b1-dd33ab900553" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../FarmAPI/Controllers/BarnsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/.idea/.idea.FarmAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/.idea/.idea.FarmAPI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/Controllers/BoxesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/Controllers/BoxesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/Manager/ApiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/Manager/ApiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/Manager/SocketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/Manager/SocketManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/Models/SocketMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/Models/SocketMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Debug/netcoreapp2.1/FarmAPI.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/FarmAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/FarmAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/FarmAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/FarmAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/publish/FarmAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/publish/FarmAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/publish/FarmAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/bin/Release/netcoreapp2.1/publish/FarmAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Debug/netcoreapp2.1/FarmAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/FarmAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/Release/netcoreapp2.1/FarmAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FarmAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FarmAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FarmDataController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FarmDataController/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmDataController/Sockets/LSWebSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FarmDataController/Sockets/LSWebSocket.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +42,8 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,13 +58,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="221" />
+          <entry key="cs" value="236" />
           <entry key="txt" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="221" />
+          <entry key="C#" value="236" />
           <entry key="PLAIN_TEXT" value="130" />
         </counts>
       </usages-collector>
@@ -47,22 +75,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FarmDataController/Sockets/LSWebSocket.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding>
-                <marker date="1541955115616" expanded="false" signature="6:159" ph="..." />
-                <marker date="1541955115616" expanded="true" signature="197:2144" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="221:2141" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="268:1935" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="502:1702" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="731:1590" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="988:1364" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="1255:1342" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="1607:1688" ph="/* handler.Shutdown(SocketShutdown.Both); ... */" />
-                <marker date="1541955115616" expanded="true" signature="1738:1819" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="1997:2018" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="2056:2077" ph="{...}" />
-                <marker date="1541955115616" expanded="true" signature="2114:2135" ph="{...}" />
+                <marker date="1542008928286" expanded="false" signature="6:159" ph="..." />
+                <marker date="1542008928286" expanded="true" signature="197:2215" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="221:2212" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="268:1976" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="502:1743" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="731:1631" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="988:1364" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="1255:1342" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="1648:1729" ph="/* handler.Shutdown(SocketShutdown.Both); ... */" />
+                <marker date="1542008928286" expanded="true" signature="1779:1860" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="2068:2089" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="2127:2148" ph="{...}" />
+                <marker date="1542008928286" expanded="true" signature="2185:2206" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -141,10 +169,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1944" />
-    <option name="height" value="1044" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -188,6 +215,7 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,6 +268,7 @@
       <updated>1541762076408</updated>
       <workItem from="1541762079448" duration="5230000" />
       <workItem from="1541954919007" duration="2456000" />
+      <workItem from="1542008748798" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="Gjort klar til socket">
       <created>1541771689935</created>
@@ -259,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7686000" />
+    <option name="totallyTimeSpent" value="7866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -274,12 +303,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2874494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2923077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,35 +366,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1541767581644" expanded="false" signature="6:149" ph="..." />
-            <marker date="1541767581644" expanded="true" signature="179:428" ph="{...}" />
-            <marker date="1541767581644" expanded="true" signature="199:426" ph="{...}" />
-            <marker date="1541767581644" expanded="true" signature="323:420" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FarmDataController/Models/Sensor.cs">
+    <entry file="file://$PROJECT_DIR$/FarmDataController/Sockets/LSWebSocket.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="187">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding>
-            <marker date="1541716479336" expanded="false" signature="6:115" ph="..." />
-            <marker date="1541716479336" expanded="true" signature="152:336" ph="{...}" />
-            <marker date="1541716479336" expanded="true" signature="187:334" ph="{...}" />
-            <marker date="1541716479336" expanded="true" signature="217:238" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FarmDataController/Models/FoodSensor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1541716479336" expanded="false" signature="6:115" ph="..." />
-            <marker date="1541716479336" expanded="true" signature="152:246" ph="{...}" />
-            <marker date="1541716479336" expanded="true" signature="184:244" ph="{...}" />
-            <marker date="1541716479336" expanded="true" signature="218:238" ph="{...}" />
+            <marker date="1542008928286" expanded="false" signature="6:159" ph="..." />
+            <marker date="1542008928286" expanded="true" signature="197:2215" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="221:2212" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="268:1976" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="502:1743" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="731:1631" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="988:1364" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="1255:1342" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="1648:1729" ph="/* handler.Shutdown(SocketShutdown.Both); ... */" />
+            <marker date="1542008928286" expanded="true" signature="1779:1860" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="2068:2089" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="2127:2148" ph="{...}" />
+            <marker date="1542008928286" expanded="true" signature="2185:2206" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -383,24 +404,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FarmDataController/Sockets/LSWebSocket.cs">
+    <entry file="file://$PROJECT_DIR$/FarmDataController/Models/FoodSensor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        <state>
           <folding>
-            <marker date="1541955115616" expanded="false" signature="6:159" ph="..." />
-            <marker date="1541955115616" expanded="true" signature="197:2144" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="221:2141" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="268:1935" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="502:1702" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="731:1590" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="988:1364" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="1255:1342" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="1607:1688" ph="/* handler.Shutdown(SocketShutdown.Both); ... */" />
-            <marker date="1541955115616" expanded="true" signature="1738:1819" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="1997:2018" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="2056:2077" ph="{...}" />
-            <marker date="1541955115616" expanded="true" signature="2114:2135" ph="{...}" />
+            <marker date="1541716479336" expanded="false" signature="6:115" ph="..." />
+            <marker date="1541716479336" expanded="true" signature="152:246" ph="{...}" />
+            <marker date="1541716479336" expanded="true" signature="184:244" ph="{...}" />
+            <marker date="1541716479336" expanded="true" signature="218:238" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FarmDataController/Models/Sensor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1541716479336" expanded="false" signature="6:115" ph="..." />
+            <marker date="1541716479336" expanded="true" signature="152:336" ph="{...}" />
+            <marker date="1541716479336" expanded="true" signature="187:334" ph="{...}" />
+            <marker date="1541716479336" expanded="true" signature="217:238" ph="{...}" />
           </folding>
         </state>
       </provider>
