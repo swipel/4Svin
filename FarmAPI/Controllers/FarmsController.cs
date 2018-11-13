@@ -27,18 +27,17 @@ namespace FarmAPI.Controllers
             }
             else
             {
-                return NotFound("Fail");
+                return NotFound("No item found");
             }
 
-            //RETURN ALL FARMS
-            //TODO only get user farm
+            //TODO only get user farm (No user login)
         }
         
         [HttpGet("{farmId}/feed")]
         public ActionResult Get(int farmId)
         {
-            _apiManager.FeedAnimal(farmId);
-            return Ok("Started feeding of farm: " + farmId.ToString());
+            var farm = _apiManager.FeedAnimal(farmId);
+            return Ok(farm);
         }
     }
 }

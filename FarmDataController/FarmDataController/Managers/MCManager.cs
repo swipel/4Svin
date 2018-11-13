@@ -8,24 +8,44 @@ using System.Threading.Tasks;
 
 namespace FarmDataController.Managers
 {
-    public class MCManager
+    public sealed class MCManager
     {
-        MCSensorSocket SensorSocket = new MCSensorSocket();
+        private static MCManager instance = null;
+        private static readonly object padlock = new object();
 
+        MCManager(){}
+
+        public static MCManager Instance
+        {
+            get
+            {
+                lock (padlock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new MCManager();
+                    }
+                    return instance;
+                }
+            }
+        }
+        
+        //MCSensorSocket SensorSocket = new MCSensorSocket();
         List<Sensor> Sensorlist = new List<Sensor>();
 
 
         public List<Sensor> GetSocketData()
         {
             List<Sensor> _Sensorlist = new List<Sensor>();
-            Sensorlist = SensorSocket.GatherAndShipSensors();
+           // Sensorlist = SensorSocket.GatherAndShipSensors();
             return Sensorlist;
         }
 
-        public bool SocketFeed()
+        public SocketFeedResponse SocketFeed(int farmId)
         {
-            MCFeederSocket FeederSocket = new MCFeederSocket();
-            return true;
+            MCFeederSocket feederSocket = new MCFeederSocket();
+            var response = feederSocket.FeederFeed();
+            return new SocketFeedResponse(farmId, response);
         }
     }
 }

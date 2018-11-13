@@ -21,14 +21,12 @@ namespace FarmAPI.Controllers
         public ActionResult Get(int farmId)
         {
             var barns = _apiManager.GetAllBarnsByFarmId(farmId).ToList();
+            //Check if barns list are not empty
             if (barns.Count > 0)
             {
                 return Ok(barns);
             }
-            else
-            {
-                return NotFound("Fail");
-            }
+            return NotFound("No item found");
         }
     }
 }

@@ -72,7 +72,7 @@ namespace FarmAPI.Models
                     .WithMany(p => p.Box)
                     .HasForeignKey(d => new { d.BarnNumber, d.FarmId })
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Box__5165187F");
+                    .HasConstraintName("FK__Box__52593CB8");
             });
 
             modelBuilder.Entity<BoxType>(entity =>
@@ -148,7 +148,7 @@ namespace FarmAPI.Models
                     .WithMany(p => p.FoodLog)
                     .HasForeignKey(d => new { d.FarmId, d.SiloNumber })
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__FoodLog__70DDC3D8");
+                    .HasConstraintName("FK__FoodLog__71D1E811");
             });
 
             modelBuilder.Entity<FoodMixType>(entity =>
@@ -157,13 +157,13 @@ namespace FarmAPI.Models
                     .WithMany(p => p.FoodMixType)
                     .HasForeignKey(d => d.BoxTypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__FoodMixTy__BoxTy__6E01572D");
+                    .HasConstraintName("FK__FoodMixTy__BoxTy__6EF57B66");
 
                 entity.HasOne(d => d.FoodType)
                     .WithMany(p => p.FoodMixType)
                     .HasForeignKey(d => d.FoodTypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__FoodMixTy__FoodT__6D0D32F4");
+                    .HasConstraintName("FK__FoodMixTy__FoodT__6E01572D");
             });
 
             modelBuilder.Entity<FoodType>(entity =>
@@ -183,13 +183,13 @@ namespace FarmAPI.Models
                     .WithMany(p => p.Schedule)
                     .HasForeignKey(d => d.FarmId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Schedule__FarmId__693CA210");
+                    .HasConstraintName("FK__Schedule__FarmId__6A30C649");
 
                 entity.HasOne(d => d.Silo)
                     .WithMany(p => p.Schedule)
                     .HasForeignKey(d => new { d.FarmId, d.SiloNumber })
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Schedule__6A30C649");
+                    .HasConstraintName("FK__Schedule__6B24EA82");
             });
 
             modelBuilder.Entity<SecurityLevel>(entity =>
@@ -201,13 +201,11 @@ namespace FarmAPI.Models
 
             modelBuilder.Entity<Sensor>(entity =>
             {
-                entity.Property(e => e.SensorId).ValueGeneratedNever();
-
                 entity.HasOne(d => d.SensorType)
                     .WithMany(p => p.Sensor)
                     .HasForeignKey(d => d.SensorTypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Sensor__SensorTy__5629CD9C");
+                    .HasConstraintName("FK__Sensor__SensorTy__571DF1D5");
             });
 
             modelBuilder.Entity<SensorBox>(entity =>
@@ -218,13 +216,13 @@ namespace FarmAPI.Models
                     .WithMany(p => p.SensorBox)
                     .HasForeignKey(d => d.SensorId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SensorBox__Senso__59063A47");
+                    .HasConstraintName("FK__SensorBox__Senso__59FA5E80");
 
                 entity.HasOne(d => d.Box)
                     .WithMany(p => p.SensorBox)
                     .HasForeignKey(d => new { d.BoxNumber, d.BarnNumber, d.FarmId })
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SensorBox__59FA5E80");
+                    .HasConstraintName("FK__SensorBox__5AEE82B9");
             });
 
             modelBuilder.Entity<SensorSilo>(entity =>
@@ -235,13 +233,13 @@ namespace FarmAPI.Models
                     .WithMany(p => p.SensorSilo)
                     .HasForeignKey(d => d.SensorId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SensorSil__Senso__656C112C");
+                    .HasConstraintName("FK__SensorSil__Senso__66603565");
 
                 entity.HasOne(d => d.Silo)
                     .WithMany(p => p.SensorSilo)
                     .HasForeignKey(d => new { d.FarmId, d.SiloNumber })
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SensorSilo__66603565");
+                    .HasConstraintName("FK__SensorSilo__6754599E");
             });
 
             modelBuilder.Entity<SensorType>(entity =>
@@ -260,7 +258,7 @@ namespace FarmAPI.Models
                     .WithMany(p => p.SensorValue)
                     .HasForeignKey(d => d.SensorId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SensorVal__Senso__5CD6CB2B");
+                    .HasConstraintName("FK__SensorVal__Senso__5DCAEF64");
             });
 
             modelBuilder.Entity<Silo>(entity =>
@@ -271,13 +269,13 @@ namespace FarmAPI.Models
                     .WithMany(p => p.Silo)
                     .HasForeignKey(d => d.FarmId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Silo__FarmId__619B8048");
+                    .HasConstraintName("FK__Silo__FarmId__628FA481");
 
                 entity.HasOne(d => d.FoodType)
                     .WithMany(p => p.Silo)
                     .HasForeignKey(d => d.FoodTypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Silo__FoodTypeId__628FA481");
+                    .HasConstraintName("FK__Silo__FoodTypeId__6383C8BA");
             });
 
             modelBuilder.Entity<User>(entity =>

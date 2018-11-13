@@ -8,6 +8,9 @@
       <e p="FarmDataController" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Enum" t="Include">
+          <e p="TypeEnum.cs" t="Include" />
+        </e>
         <e p="FarmDataController.csproj" t="IncludeRecursive" />
         <e p="Interfaces" t="Include">
           <e p="ISocket.cs" t="Include" />
@@ -21,6 +24,8 @@
         <e p="Models" t="Include">
           <e p="FoodSensor.cs" t="Include" />
           <e p="Sensor.cs" t="Include" />
+          <e p="SocketFeedResponse .cs" t="Include" />
+          <e p="SocketReceive.cs" t="Include" />
           <e p="TemperatureSensor.cs" t="Include" />
           <e p="UvSensor.cs" t="Include" />
           <e p="WaterSensor.cs" t="Include" />

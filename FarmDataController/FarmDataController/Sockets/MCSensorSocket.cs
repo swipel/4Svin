@@ -14,7 +14,7 @@ namespace FarmDataController.Sockets
     {
         public MCSensorSocket()
         {
-            Ip = Dns.GetHostEntry("10.108.137.203").AddressList[2];
+            Ip = Dns.GetHostEntry("localhost").AddressList[2];
             Server = new TcpListener(Ip, 80);
             Client = default(TcpClient);
             Server.Start();

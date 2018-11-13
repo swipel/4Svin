@@ -24,6 +24,7 @@
       <e p="Models" t="Include">
         <e p="Barn.cs" t="Include" />
         <e p="Box.cs" t="Include" />
+        <e p="BoxFormat.cs" t="Include" />
         <e p="BoxType.cs" t="Include" />
         <e p="BoxUpdate.cs" t="Include" />
         <e p="Country.cs" t="Include" />
@@ -40,14 +41,16 @@
         <e p="SensorType.cs" t="Include" />
         <e p="SensorValue.cs" t="Include" />
         <e p="Silo.cs" t="Include" />
+        <e p="SocketFeedResponse.cs" t="Include" />
         <e p="SocketMessage.cs" t="Include" />
+        <e p="StatisticsFormat.cs" t="Include" />
         <e p="SvinSkoleContext.cs" t="Include" />
         <e p="User.cs" t="Include" />
         <e p="UserFarm.cs" t="Include" />
         <e p="Zipcode.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
-        <e p="Debug" t="Include">
+        <e p="Release" t="Include">
           <e p="netcoreapp2.1" t="Include">
             <e p="FarmAPI.AssemblyInfo.cs" t="Include" />
           </e>

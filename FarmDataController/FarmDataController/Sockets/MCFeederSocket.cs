@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using FarmDataController.Mocking;
 
 namespace FarmDataController.Sockets
 {
@@ -21,7 +22,8 @@ namespace FarmDataController.Sockets
 
         public bool FeederFeed()
         {
-            return true;
+            Feeder feeder = new Feeder();
+            return feeder.StartFeeder();
         }
     }
 }

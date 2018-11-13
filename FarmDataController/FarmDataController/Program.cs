@@ -9,12 +9,11 @@ namespace FarmDataController
 {
     class Program
     {
-        private readonly LSWebSocket _socketApi = new LSWebSocket();
-        
         static void Main(string[] args)
         {
             //TODO Should be a thread
-            LSWebSocket.StartServer();
+            LSWebSocket socketApi = new LSWebSocket();
+            socketApi.StartServer("localhost");
         }
     }
 }

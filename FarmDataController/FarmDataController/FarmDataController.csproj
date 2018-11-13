@@ -45,11 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\TypeEnum.cs" />
     <Compile Include="Interfaces\ISocket.cs" />
     <Compile Include="Managers\MCManager.cs" />
     <Compile Include="Mocking\Feeder.cs" />
     <Compile Include="Models\FoodSensor.cs" />
     <Compile Include="Models\Sensor.cs" />
+    <Compile Include="Models\SocketFeedResponse .cs" />
+    <Compile Include="Models\SocketReceive.cs" />
     <Compile Include="Models\TemperatureSensor.cs" />
     <Compile Include="Models\UvSensor.cs" />
     <Compile Include="Models\WaterSensor.cs" />
@@ -63,6 +66,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

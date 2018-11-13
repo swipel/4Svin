@@ -6,31 +6,27 @@ namespace FarmAPI.Models
 
     public class SocketMessage
     {
-       // public int Type { get; set; }
         public TypeEnum Type { get; set; }
-        public int BoxId { get; set; }
-        public int BarnId { get; set; }
-        public Farm Farm { get; set; }
+        public int FarmId { get; set; }
+        public int SensorId { get; set; }
         
         /*Type
         1 = Feed
         2 = Statistics
         */
-        //Er ikke sikker på det her er den bedste måde :/
         
         
-        public SocketMessage(TypeEnum type, Farm farm)
+        public SocketMessage(TypeEnum type, int farmId)
         {
             Type = type;
-            Farm = farm;
+            FarmId = farmId;
         }
 
-        public SocketMessage(TypeEnum type, int boxId, int barnId, Farm farm)
+        public SocketMessage(TypeEnum type, int farmId, int sensorId)
         {
             Type = type;
-            BoxId = boxId;
-            BarnId = barnId;
-            Farm = farm;
+            SensorId = sensorId;
+            FarmId = farmId;
         }
     }
 }

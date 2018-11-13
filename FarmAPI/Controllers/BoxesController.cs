@@ -25,7 +25,18 @@ namespace FarmAPI.Controllers
             {
                 return Ok(boxes);
             }
-            return NotFound("Fail");
+            return NotFound("No item found");
+        }
+        
+        [HttpGet("{farmId}/{barnNumber}/{boxNumber}")]
+        public ActionResult Get(int farmId, int barnNumber, int boxNumber)
+        {
+            var boxes = _apiManager.GetBoxById(farmId, barnNumber, boxNumber).ToList();
+            if (boxes.Count > 0)
+            {
+                return Ok(boxes);
+            }
+            return NotFound("No item found");
         }
         
         //Get statistics
@@ -37,7 +48,7 @@ namespace FarmAPI.Controllers
             {
                 return Ok(boxes);
             }
-            return NotFound("Fail");
+            return NotFound("No item found");
         }
 
         //Update box
@@ -49,7 +60,7 @@ namespace FarmAPI.Controllers
             {
                 return Ok(success);
             }
-            return NotFound("Fail");
+            return NotFound("No item found");
         }
     }
 }

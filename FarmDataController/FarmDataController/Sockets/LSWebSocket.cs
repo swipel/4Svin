@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using FarmDataController.Enum;
+using FarmDataController.Managers;
+using FarmDataController.Models;
+using Newtonsoft.Json;
 
 namespace FarmDataController.Sockets
 {
     class LSWebSocket
     {
-        public static void StartServer()
+        public void StartServer(string ip)
         {
-            IPHostEntry host = Dns.GetHostEntry("localhost");  
+            IPHostEntry host = Dns.GetHostEntry(ip);  
             IPAddress ipAddress = host.AddressList[0];  
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);    
         
@@ -39,12 +44,12 @@ namespace FarmDataController.Sockets
                             break;
                         }
                     }
-            
+
+                    string response = HandleData(data);
                     
-                    
-                    Console.WriteLine("Text received : {0}", data);  
+                //    Console.WriteLine("Text received : {0}", data);  
   
-                    byte[] msg = Encoding.ASCII.GetBytes(data+" From server");  
+                    byte[] msg = Encoding.ASCII.GetBytes(response);  
                     handler.Send(msg); 
                 }
                 // handler.Shutdown(SocketShutdown.Both);  
@@ -53,14 +58,26 @@ namespace FarmDataController.Sockets
             catch (Exception e)  
             {  
                 Console.WriteLine(e.ToString());  
-            }  
-  
-            Console.WriteLine("\n Press any key to continue...");  
-            Console.ReadKey();  
-        }     
-        
-        public void 
-        
+            }   
+        }
+
+        public string HandleData(string data)
+        {
+           data = data.Substring(0, data.Length - 5);
+           SocketReceive socketObject = JsonConvert.DeserializeObject<SocketReceive>(data);
+
+            if (socketObject.Type == TypeEnum.Feed)
+            {
+                   MCManager mcm = MCManager.Instance;
+                   return JsonConvert.SerializeObject(mcm.SocketFeed(socketObject.FarmId));
+            }
+            else if (socketObject.Type == TypeEnum.Statistics)
+            {
+                //TODO GET STATISTICS
+            }
+            
+            return "Error";
+        }
         
         public void GetDataMcManager()
         {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -18,26 +19,36 @@ namespace FarmAPI.WebSocket
     {
         public string FeedAnimal(SocketMessage socketMessageObject)
         {
+            //Send request to LS to start feeder
             var feedResponse = SendSocketMessage(socketMessageObject);
-            
             return feedResponse;
         }
 
-        public void GetStatisticsFromLs()
+        public string Statistics(SocketMessage socketMessageObject)
         {
+            //Send request to LS to get new statistics
+            var statisticsResponse = SendSocketMessage(socketMessageObject);
+            return statisticsResponse;
             //TODO read statistics SensorId
         }
         
-        public string SendSocketMessage(SocketMessage socketObject)
+        //Send json to ls
+        private string SendSocketMessage(SocketMessage socketObject)
         {  
             byte[] bytes = new byte[1024];  
   
             try  
             {  
+                //Remote server ip
                 IPHostEntry host = Dns.GetHostEntry("localhost");  
-                IPAddress ipAddress = host.AddressList[0];  
+                
+                //Get first ip in array
+                IPAddress ipAddress = host.AddressList[0];
+                
+                //Use ip and port
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, 11000);  
   
+                //Create socket connection
                 Socket sender = new Socket(ipAddress.AddressFamily,  
                     SocketType.Stream, ProtocolType.Tcp);
 
@@ -59,29 +70,27 @@ namespace FarmAPI.WebSocket
                 
                     //Convert byte[] to string
                     return Encoding.ASCII.GetString(bytes, 0, bytesRec); 
-                    
-                    // Console.WriteLine("Echoed = {0}",
-                     //   Encoding.ASCII.GetString(bytes, 0, bytesRec));
 
                 }
                 catch (ArgumentNullException ane)
                 {
-                    Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
+                    throw ane;
                 }
                 catch (SocketException se)
                 {
-                    Console.WriteLine("SocketException : {0}", se.ToString());
+                    throw se;
+                    
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Unexpected exception : {0}", e.ToString());
+                    throw e;
+                    
                 }
             }  
             catch (Exception e)  
             {  
-                Console.WriteLine(e.ToString());
+                throw e;
             }  
-            return null;
         } 
     }
 }
