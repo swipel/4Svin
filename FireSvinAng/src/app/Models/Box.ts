@@ -2,9 +2,19 @@ import { Observable } from "rxjs";
 import { Statistic } from "./Statistic"
 
 export class Box {
-    Amount: number;
-    TypeId: number;
-    TypeName: string;
-    Statistics: Statistic[];
+    
+    boxNumber: number;
+    barnNumber: number;
+    farmId: number;
+    boxType: string;
+    boxTypeId: number;
+    animalAmount: number;
+
+    constructor(data: Box|Object) {
+        Object.assign(this, data);
+        
+    }
+
+
 
 }

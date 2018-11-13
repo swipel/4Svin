@@ -1,9 +1,21 @@
 
 
-<div *ngFor="let farm of farms">
 
-    {{farm.farmId}}
+
+  <select id="selectBarn" [(ngModel)]="currentBarn" (change)="getBoxesFromBarn()">
+    <option *ngFor="let barn of barns" [value]="barn.barnNumber">
+      Barn : {{barn.barnNumber}}
+    </option>
+  </select>
+
+
+  <ul>
+    <li *ngFor="let box of boxes">
+      <a routerLink="/detail/{{gl.currentFarm}}/{{currentBarn}}/{{box.boxNumber}}">
+          Box: {{box.boxNumber}}
+      </a>
+
+    </li>
+  </ul>
+
   
-  </div>
-
-

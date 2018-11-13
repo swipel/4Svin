@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   
   errorMessage: String;
 
+  response: string[];
   
   farms: Farm[];
 
@@ -26,6 +27,11 @@ export class AppComponent implements OnInit {
       error => this.errorMessage = <any>error
     );
     
+}
+
+feed() {
+  this.http.feed(this.gl.currentFarm).subscribe();
+  alert("Farm " + this.gl.currentFarm + " have been fed");
 }
 
 

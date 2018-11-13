@@ -13,6 +13,8 @@
           Farm : {{farm.farmId}}
         </option>
       </select>
+
+      <button (click)="feed()">Feed selected farm</button>
       
 
     </ul>
@@ -25,6 +27,14 @@
   <div style="text-align: center">
     <h1>Velkommen til din Svinefarms, angular, SPA</h1>
     <div>
+
+        <li *ngFor="let string of response">
+  
+            
+          {{response}}
+      
+          
+          </li>
 
   
 
