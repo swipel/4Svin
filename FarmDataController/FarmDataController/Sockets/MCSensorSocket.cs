@@ -12,27 +12,26 @@ namespace FarmDataController.Sockets
 {
     public class MCSensorSocket
     {
+        //TODO NOT DONE
         public MCSensorSocket()
         {
+            //Ip of server
             Ip = Dns.GetHostEntry("localhost").AddressList[2];
             Server = new TcpListener(Ip, 80);
             Client = default(TcpClient);
             Server.Start();
+            //Wait for connection
             Client = Server.AcceptTcpClient();
             Client.GetStream();
             IncommingData = new byte[10];
+            //Read stream of data
             Stream.Read(IncommingData, 0, IncommingData.Length);
+            //Byte[] to string
             string dataToRead = Encoding.ASCII.GetString(IncommingData, 0, IncommingData.Length);
-
+            
             Thread updateSensorList = new Thread(CreateSensorObject);
             updateSensorList.Start();
-
-            
-
-        }
-
-        public void testmet()
-        { }
+        }        
 
         private IPAddress Ip { get; set; }
         private TcpListener Server { get; set; }

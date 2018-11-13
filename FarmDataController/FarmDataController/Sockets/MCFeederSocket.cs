@@ -20,8 +20,10 @@ namespace FarmDataController.Sockets
         public Byte[] IncommingData { get; set; }
         public List<Sensor> Sensors { get; set; }
 
+        //Start feeder
         public bool FeederFeed()
         {
+            
             Feeder feeder = new Feeder();
             return feeder.StartFeeder();
         }

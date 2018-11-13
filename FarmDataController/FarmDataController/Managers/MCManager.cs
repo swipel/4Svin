@@ -14,7 +14,7 @@ namespace FarmDataController.Managers
         private static readonly object padlock = new object();
 
         MCManager(){}
-
+        //SingleTon
         public static MCManager Instance
         {
             get
@@ -30,17 +30,17 @@ namespace FarmDataController.Managers
             }
         }
         
-        //MCSensorSocket SensorSocket = new MCSensorSocket();
         List<Sensor> Sensorlist = new List<Sensor>();
 
 
         public List<Sensor> GetSocketData()
         {
             List<Sensor> _Sensorlist = new List<Sensor>();
-           // Sensorlist = SensorSocket.GatherAndShipSensors();
+            //TODO Get all sensors
             return Sensorlist;
         }
 
+        //Call socket where feeder is
         public SocketFeedResponse SocketFeed(int farmId)
         {
             MCFeederSocket feederSocket = new MCFeederSocket();
