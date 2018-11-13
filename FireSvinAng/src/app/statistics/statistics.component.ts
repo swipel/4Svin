@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import { Globals } from '../Globals';
 import { Statistic } from '../Models/Statistic';
@@ -8,7 +8,9 @@ import { Statistic } from '../Models/Statistic';
   templateUrl: './statistics.component.html',
   styleUrls: ['./statistics.component.scss']
 })
-export class StatisticsComponent implements OnInit {
+export class StatisticsComponent implements OnInit, AfterViewInit {
+  
+  
   errorMessage: string;
 
   constructor(private http: HttpService, private gl: Globals) { }
@@ -18,6 +20,10 @@ export class StatisticsComponent implements OnInit {
 
   ngOnInit() {
     
+  }
+
+  ngAfterViewInit(): void {
+    this.loadStatsFromSelectedFarm();
   }
 
   loadStatsFromSelectedFarm() {

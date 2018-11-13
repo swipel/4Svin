@@ -1,3 +1,22 @@
-<p>
-  box-details works!
-</p>
+
+<ul>
+    <li *ngFor="let box of boxes">
+  
+      <span>Box nr: {{box.boxNumber}}</span>
+      <br>
+      <span>Barn nr: {{box.barnNumber}}</span>
+      <br>
+      <span>farm id: {{box.farmId}}</span>
+      <br>
+      <span>Box type: {{box.boxType}}</span>
+      <br>
+      <span>Box type id: {{box.boxTypeId}}</span>
+      <br>
+      <span>Amount of animals: {{box.animalAmount}}</span>
+
+
+    
+    </li>
+  </ul>
+
+
